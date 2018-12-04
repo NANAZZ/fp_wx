@@ -1,0 +1,131 @@
+/* pages/productsDetails/productsDetails.wxss */
+page{
+  margin-bottom:110rpx;
+}
+/* 轮播图 */
+.slider,.slider swiper,.slider image{
+  height:1000rpx;
+  width:100%;
+}
+/* 底部加购 */
+.parent-bottom{
+  width:100%;
+  position:fixed;
+  bottom:0%;
+}
+.bottom-btn{
+  display:flex;
+}
+.bottom-btn-pic{
+  width:20%;
+  background:#fff;
+}
+.bottom-btn button{
+  width:40%;
+  font-size:14px;
+  color:#fff;
+  padding:15rpx;
+  border-radius: 0;
+}
+.bottom-btn-pic image{
+  width:50rpx;
+  height:50rpx;
+  display: block;
+  margin:20rpx auto;
+}
+.bottom-btn-shopcart{
+  background:#FA64A5;
+}
+.bottom-btn-buy{
+  background:#d52976;
+}
+/* 底部模态框 */
+.parent-modal{
+  width:100%;
+  height:100%;
+  background:rgba(255,255,255,.5);
+  position:fixed;
+  bottom:110rpx;
+}
+.background-modal{
+  height:35%;
+}
+.bottom-modal{
+  width:100%;
+  height:65%;
+  background:#fff;
+  position:fixed;
+  bottom:98rpx;
+  padding-left:40rpx;
+  color:#262626;
+  font-size:14px;
+}
+.bottom-modal-top{
+  display:flex;
+}
+.bottom-modal-pic{
+  width:35%;
+}
+.bottom-modal-pic image{
+  width:200rpx;
+  height:280rpx;
+  position:relative;
+  top:-50rpx;
+}
+.bottom-modal-msg{
+  width:65%;
+  margin-top:25rpx;
+}
+.bottom-modal-title,.bottom-modal-price{
+  margin-top:15rpx;
+}
+.bottom-modal-size{
+  display:flex;
+  margin:30rpx 0;
+}
+.btn-size{
+  width:70rpx;
+  height:70rpx;
+  border:1rpx solid #ccc;
+  border-radius:8rpx;
+  text-align: center;
+  line-height: 70rpx;
+  margin-right:25rpx;
+  font-size:12px;
+}
+.bottom-modal-count{
+  margin-top:30rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+.bottom-modal-count view{
+  width:62rpx;
+  height:62rpx;
+  line-height:62rpx;
+  box-sizing: border-box;
+  color:#262626;
+  text-align: center;
+  border:1rpx solid #ccc;
+}
+.bottom-modal-count view:first-child{
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+}
+.bottom-modal-count view:last-child{
+  border-top-right-radius:8rpx;
+  border-bottom-right-radius: 8rpx;
+}
+.bottom-modal-count input{
+  width:62rpx;
+  height:60rpx;
+  border:1rpx solid #ccc;
+  text-align: center;
+}
+.btn-minus:active,.btn-plus:active{
+  color:#d52976;
+}
+.btn-size-hover{
+  border-color:#FA64A5;
+  background:#FA64A5;
+  color:#fff;
+}

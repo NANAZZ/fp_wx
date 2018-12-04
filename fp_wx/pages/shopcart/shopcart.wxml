@@ -1,0 +1,38 @@
+<!--pages/shopcart/shopcart.wxml-->
+<!-- 管理 -->
+<view class="cell top-all">
+  <view class="top-checkbox">
+    <checkbox></checkbox>
+    <text>全选</text>
+  </view>
+  <view class="top-manage">管理</view>
+</view>
+<!-- 商品列表 -->
+<view class="goods">
+  <view class="goods-checkbox">
+    <checkbox></checkbox>
+  </view>
+  <view class="goods-img">
+    <image src="http://127.0.0.1:3000/img/products/01new/005.jpg"></image>
+  </view>
+  <view class="goods-info">
+    <text class="goods-title ell">衣服名称</text>
+    <text class="goods-price">￥价钱</text>
+    <text class="goods-size">尺码：</text>
+  </view>
+  <view class="goods-count">
+    <view class="btn-minus">-</view>
+    <input type="number" value="1"></input>
+    <view class="btn-plus">+</view>
+  </view>
+</view>
+<!-- 底部结算 -->
+<view class="parent-bottom">
+  <view class="cell bottom-pay">
+    <view class="bottom-checkbox">
+      <checkbox></checkbox>
+    </view>
+    <view class="bottom-total">总计：</view>
+    <button class="bottom-btn-total">结算</button>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<!--pages/products/products.wxml-->
+<!--搜索框-->
+<view class="search">
+    <input class="search-inner-input" type='text' placeholder='搜索' placeholder-style='text-align:center;font-size:12px;color:#262626;'></input>
+</view>
+<!--导航-->
+<view class="tabbar">
+  <view class="tabbar-left">
+    <view class="tab-item {{serious=='new'?'hover':''}}" bindtap="handleChangeType" data-type="new" >首发新款</view>
+    <view class="tab-item {{serious=='clothes'?'hover':''}}" bindtap="handleChangeType" data-type="clothes">服装</view>
+    <view class="tab-item {{serious=='jean'?'hover':''}}" bindtap="handleChangeType" data-type="jean">牛仔裤</view>
+    <view class="tab-item {{serious=='coat'?'hover':''}}" bindtap="handleChangeType" data-type="coat">外套</view>
+    <view class="tab-item {{serious=='dress'?'hover':''}}" bindtap="handleChangeType" data-type="dress">连衣裙</view>
+    <view class="tab-item {{serious=='shoes'?'hover':''}}" bindtap="handleChangeType" data-type="shoes">鞋履</view> 
+    <view class="tab-item {{serious=='ornament'?'hover':''}}" bindtap="handleChangeType" data-type="ornament">配饰</view> 
+    <view class="tab-item {{serious=='cosmetology'?'hover':''}}" bindtap="handleChangeType" data-type="cosmetology">美容养颜</view> 
+  </view>
+  <view class="tabbar-container">
+    <view class="tab-container-item goods">
+        <block wx:for="{{list}}" wx:key="item.id"> 
+          <view class="goods-item">
+            <image src="{{pic[index]}}" mode="aspectFill" lazy-load bindtap="handleJumpDetails" data-lid="{{item.lid}}"></image>
+            <text class="goods-title ell">{{item.title}}</text>
+            <text class="goods-price">￥{{item.price}}</text>
+          </view>
+        </block>          
+    </view>
+    <button class="tabbar-btn" bindtap="getMore">点击查看更多</button>
+  </view>
+</view>

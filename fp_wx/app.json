@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/products/products",
+    "pages/productsList/productsList",
+    "pages/productsDetails/productsDetails",
+    "pages/profile/profile",
+    "pages/shopcart/shopcart"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FEF9F8",
+    "navigationBarTitleText": "Free People",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d52976",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "icon/tab-bar-home-n.png",
+        "selectedIconPath": "icon/tab-bar-home-s.png"
+      },
+      {
+        "pagePath": "pages/products/products",
+        "text": "分类",
+        "iconPath": "icon/tab-bar-classificatio-n.png",
+        "selectedIconPath": "icon/tab-bar-classificatio-s.png"
+      },
+      {
+        "pagePath": "pages/shopcart/shopcart",
+        "text": "购物车",
+        "iconPath": "icon/tab-bar-car-n.png",
+        "selectedIconPath": "icon/tab-bar-car-s.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "icon/tab-bar-profile-n.png",
+        "selectedIconPath": "icon/tab-bar-profile-s.png"
+      }
+    ]
+  }
+}

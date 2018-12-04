@@ -1,0 +1,15 @@
+/* pages/profile/profile.wxss */
+.avatar{
+  background: #d52976;
+  height:400rpx;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.headpic{
+  width:200rpx;
+  height:200rpx;
+  border-radius:50%;
+  border:3rpx solid rgba(0,0,0,.3);
+  overflow: hidden;
+}

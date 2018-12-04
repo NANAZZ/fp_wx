@@ -1,0 +1,16 @@
+<!--pages/productsList/productsList.wxml-->
+<!--搜索框-->
+<view class="search">
+    <input class="search-inner-input" type='text' placeholder='搜索' placeholder-style='text-align:center;font-size:12px;color:#262626;'></input>
+</view>
+<!--商品列表-->
+<!-- <view class="divider"></view> -->
+<view class="goods goods-container">
+  <block wx:for="{{list}}" wx:key="item.lid"> 
+    <view class="goods-item" bindtap='handleJumpDetails' data-lid="{{item.lid}}">
+      <image src="{{pic[index]}}" mode="aspectFill" lazy-load></image>
+      <text class="goods-title ell">{{item.title}}</text>
+      <text class="goods-price">￥{{item.price}}</text>
+    </view>
+  </block>
+</view>

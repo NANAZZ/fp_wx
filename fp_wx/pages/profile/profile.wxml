@@ -1,0 +1,39 @@
+<!--pages/profile/profile.wxml-->
+<view class="avatar"> 
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='headpic' style="font-size:16px;margin-top:30rpx;"> 点击登录 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" class='headpic'></image>
+      <text class="userinfo-nickname" style="display:block;text-align:center">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item arrow">我的订单</view>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item arrow">个人资料</view>
+  <view class="cell-item arrow">地址簿</view>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item arrow">设置</view>
+  <view class="cell-item arrow">常见问题</view>
+  <view class="cell-item arrow">使用条款</view>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item arrow">关于Free People</view>
+</view>
+<view class="divider"></view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item" style="text-align:center;color:#d52976">退出登录</view>
+</view>
+<view class="divider"></view>
